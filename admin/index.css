@@ -1,0 +1,540 @@
+/*Print*/
+
+/*custom*/
+html{
+    /* ganti warna biru di luar kotak */
+	background-color: #2EC13F;
+}
+*{
+	font-family: verdana;
+	font-size: 12px;
+}
+body{
+	color: #545454 !important;
+	margin-left: 140px;
+	margin-right: 140px;
+}
+.top-fixed{
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	top:0px;
+	padding-left: 40px;
+	padding-right: 40px;
+	z-index: 100;
+}
+.block-fixed{
+	width: 100%;
+}
+
+.header{
+	background-color: #11BD28;
+	min-height: 200px;
+	min-width: 1080px;
+}
+.header img{
+	margin-right: 20px;
+}
+.header h3{
+	margin-top: 0px;
+}
+table.menu{
+	width: 100%;
+	border-collapse: collapse;
+	border-top: 1px solid #707070;
+	border-bottom: 1px solid #707070;
+	font-size: 12px;
+}
+/* setting antrian */
+table.menu .invert{
+	background-color: #3e3c3c !important;
+}
+table.menu .active-menu{
+    /* ganti warna saat di menu di pilih */
+	background-color: #276DCF !important;
+}
+
+table.menu .nav-menu{
+	width: 150px;
+	/* ganti warna pada menu yg tidak di pilih dan bukan antrian  */
+	background-color: #116D28;
+	padding: 10px;
+	color: #fff;
+	text-align: center;
+}
+table.menu .nav-menu a{
+	color: #fff;
+}
+table.menu .nav-menu:hover{
+    /* ganti warna saat kursor di arahkan di menu */
+	background-color: #1B4A8C;
+	cursor: pointer;
+}
+table.menu td{
+	position: relative;
+}
+table.menu td:hover > ul li{
+	display: block;
+}
+.ul-menu{
+	position: absolute;
+	left:0px;
+	top:40px;
+	width: 100%;
+	height: auto;
+	min-height: 40px;
+	background-color: transparent;
+	text-align: left;
+	list-style-type: none;
+	padding: 0px;
+	padding-bottom: 10px;
+	z-index: 100;
+}
+.ul-menu:hover{
+
+}
+.ul-menu:hover li{
+	display: block;
+}
+.ul-menu li{
+	display: none;
+	padding: 10px;
+	background-color: #1B4A8C;
+}
+.ul-menu li:hover{
+	background-color: #2465BF;
+}
+.konten{
+	position: relative;
+	width: 100%;
+}
+.konten .left-menu{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 250px;
+	min-height: 200px;
+	border-right: 1px solid #707070;
+	border-bottom: 1px solid #707070;
+	border-collapse: collapse;
+}
+.konten .left-menu .nav{
+	width: 100%;
+}
+.konten .left-menu .nav li.nav-menu{
+	background-color: #DBDBDB;
+	width: 100%;
+	padding: 10px;
+	border-top: 1px solid #707070;
+	border-bottom: 1px solid #707070;
+}
+.konten .left-menu .nav li.nav-menu:hover{
+	background-color: #1D95DB;
+}
+.disabled{
+	background-color: #DBDBDB !important;
+	cursor: default !important;
+}
+.konten .left-menu .nav li{
+	width: 230px;
+	padding: 10px;
+	background-color: #fff;
+	border-left: 1px solid #707070;
+	border-bottom: 1px solid #707070;
+	float: right;
+	cursor: pointer;
+}
+.konten .left-menu .nav a{
+	color: #545454;
+	padding: 0px;
+	background-color: transparent;
+}
+.konten .left-menu .nav li:hover{
+	background-color: #DBDBDB;
+}
+.konten .left-menu .nav li[bottom]{
+	border-bottom: 0px;
+}
+.konten .isi{
+	width: 100%;
+	padding: 20px;
+}
+.table-input,.table-input tr,.table-input td{
+	padding: 5px;
+}
+.table-view{
+	margin-top: 20px;
+	width: 100%;
+}
+.table-view span{
+	margin-left:10px;
+	margin-right:5px;
+	cursor: pointer;
+}
+.table-view thead{
+	background-color: #E8E8E8;
+}
+.table-view thead tr th{
+	height: 40px;
+}
+.table-view,.table-view tr,.table-view td,.table-view th{
+	padding: 5px;
+}
+.table-view tbody tr{
+	border-bottom: 1px solid #E8E8E8;
+}
+.no-display{
+	display: none !important;
+}
+.table_{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.table_ .tablecell{
+	display: table-cell;
+}
+.tableleft{
+	min-width: 200px;
+	padding-right: 10px;
+}
+.tableadd{
+	width: 200px !important;
+	min-width: 200px;
+	padding: 10px;
+	padding-right: 0px;
+	border-left: 1px solid #CCCCCC;
+	table-layout: fixed;
+}
+/* setting berita */
+.box-content{
+	position: relative;
+	width: 100%;
+	padding: 10px;
+	padding-top: 40px;
+	margin-bottom: 30px;
+}
+.judul{
+	/* ganti backgroud wrna Berita */
+	background-color: #276DCF;
+	position: absolute;
+	left: -1px;
+	top: 0px;
+	width: 100%;
+	height: 30px;
+	/* ganti warna Berita */
+	color: #FFFFFF;
+	padding: 5px;
+	padding-left: 20px; 
+}
+.judul a{
+	background-color: #184481;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 30px;
+	height: 30px;
+	padding-top: 5px;
+}
+.judul a:hover{
+	text-decoration: none;
+	background-color: #2B76E0;
+}
+.judul a::after{
+	content: "<";
+	color: #fff;
+	text-transform: none;
+	padding: 10px;
+}
+.uraian{
+	padding: 5px;
+	border-bottom: 1px dashed #00B55B;
+}
+.uraian span{
+	color: #7D7D7D;
+	font-style: italic;
+}
+/* setting box berita terbaru */
+.box-nav{
+	position: relative;
+	width: 100%;
+	padding: 10px;
+	min-height: 100px;
+	border-radius: 3px;
+	padding-top: 40px;
+	border: 1px solid #3E3C3C;
+	margin-bottom: 30px;
+}
+/* setting berita terbaru */
+.nav-title{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height: 30px;
+	padding: 5px;
+	color: #DEDE2A;
+	box-shadow: 0px 2px 3px #B8B8B8;
+	text-align: center;
+	background-color: #2362BA;
+}
+.nav-content{
+	width: 100%;
+	padding: 10px;
+}
+.nav-content .pilihan{
+	width: 100%;
+	padding: 5px;
+}
+/* stting link di berita terbaru warna ijo */
+.nav-content .pilihan:hover{
+	color: #009E4F;
+	cursor: pointer;
+}
+.komentar{
+	max-height: 200px;
+	overflow: hidden;
+	overflow-y:auto;
+}
+.isi_komentar{
+	width: 100%;
+	padding: 5px;
+}
+.btn-primary{
+	background-color: #2362BA;
+	border: 0px;
+}
+.btn-primary:hover{
+	background-color: #1B4B8F;
+}
+.btn-primary:active{
+	background-color: #1B4B8F;
+}
+.listview{
+	width: 100%;
+	list-style-type: none;
+}
+.listview .listimg{
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center;
+	width: 150px;
+	height: 120px;
+	outline: none;
+}
+.listview .listimg:hover{
+	position: absolute;
+	left:0px;
+	top:50px;
+	z-index: 100;
+	width: 100%;
+	height: 500px;
+}
+.listview .listimg:focus{
+	position: relative;
+	top: 0px;
+	width: 150px;
+	height: 120px;
+}
+.listview .listtitle{
+	width: 100%;
+	padding: 5px;
+	background-color: #eee;
+	margin-top: 10px;
+	box-shadow: 0px 2px 3px #C9C9C9;
+}
+.listview .w30{
+	display: list-item;
+	float: left;
+	width: 30%;
+	text-align: center;
+}
+.listview .w50{
+	display: list-item;
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+.listview .w70{
+	display: list-item;
+	float: left;
+	width: 70%;
+	text-align: justify;
+}
+.tabledaftar{
+	width: 100%;
+	text-align: left;
+}
+.tabledaftar tr td{
+	padding: 2px;
+}
+
+.tabledaftar input[type='text']{
+	width: 100%;
+}
+.tabledaftar input[type='text'][auto]{
+	width: auto;
+}
+.tabledaftar select{
+	width: 100%;
+}
+.tabledaftar select[auto]{
+	width: auto;
+}
+.tabledaftar textarea{
+	width: 100%;
+}
+.tabledaftar textarea[auto]{
+	width: auto;
+}
+/*---slider--*/
+#slider {
+width: 100% !important;
+  position: relative;
+  overflow: hidden;
+  margin: 0px auto 0 auto;
+}
+
+#slider ul {
+width: 100% !important;
+margin-left: 0px !important;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  text-align: center;
+  line-height: 200px;
+}
+#slider:hover > a {
+	display: block;
+}
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+  display: none;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+  display: none;
+}
+
+.news{
+	background-position: left 0px;
+	background-repeat: no-repeat;
+	background-size: 150px auto;
+	margin-bottom: 10px;
+	min-height: 100px;
+	padding-left: 170px;
+	overflow: hidden;
+}
+.news .title{
+	color: #184481;
+	font-weight: bold;
+	cursor: pointer;
+}
+.bgtop{
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	height: 250px;
+	margin-bottom: 20px;
+}
+
+ul.motor{
+	list-style: none;
+	margin: 0 10px;
+	display: inline-block;
+}
+
+ul.motor li{
+	float: left;
+    width: 230px;
+    height: 165px;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.2;
+}
+.no-border{
+	border:0px !important;
+}
+
+.nav-content ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+/* UTK warna dan berat di detail motor */
+.nav-content ul li.title{
+	background-color: #27262B;
+	color: #fff;
+	padding: 3px;
+}
+
+.testimoni{
+	width: 100%;
+	height: 100%;
+	border:1px solid #E0E0E0;
+	padding: 10px;
+	border-radius: 5px;
+	overflow:hidden;
+	overflow-x:auto;
+}
+
+.faq{
+	width: 100%;
+	padding: 10px;
+	font-size: 14px;
+	/*border: 1px solid #CCCCCC;*/
+	border-left: 3px solid #2465BF;
+	margin-bottom: 10px;
+}
+
+.antrian{
+	width: 250px;
+	height: 380px;
+	border:1px solid #2465BF;
+	border-top:10px solid #2465BF;
+	margin-bottom: 30px;
+	border-radius: 10px;
+}
+
+.forum_name{
+	white-space: nowrap;
+}
